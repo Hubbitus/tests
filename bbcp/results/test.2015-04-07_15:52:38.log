@@ -1,0 +1,270 @@
+####################################################################################
+#### [32mBBCP:  Transfer many files locally (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m1/3[0m
+#### CMD: bbcp -AeOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch' 'test.transfer' 2>&1 | egrep -v 'bbcp: Creating' --line-buffered
+#### Date: [1;34m2015-04-07_15:52:38[0m
+####################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 15947 files and 0 links in 1063 directories.
+
+real	4m10.396s
+user	1m0.366s
+sys	0m58.577s
+####################################################################################
+#### [32mBBCP:  Transfer many files locally (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m2/3[0m
+#### CMD: bbcp -AeOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch' 'test.transfer' 2>&1 | egrep -v 'bbcp: Creating' --line-buffered
+#### Date: [1;34m2015-04-07_15:56:49[0m
+####################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 15947 files and 0 links in 1063 directories.
+
+real	4m0.483s
+user	0m59.032s
+sys	0m57.607s
+####################################################################################
+#### [32mBBCP:  Transfer many files locally (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m3/3[0m
+#### CMD: bbcp -AeOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch' 'test.transfer' 2>&1 | egrep -v 'bbcp: Creating' --line-buffered
+#### Date: [1;34m2015-04-07_16:00:50[0m
+####################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Found 14346 files and 0 links in 925 directories so far...
+bbcp: Copying 15947 files and 0 links in 1063 directories.
+
+real	4m6.630s
+user	1m0.166s
+sys	0m58.889s
+####################################################################################
+#### [32mRSYNC: Transfer many files locally (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m1/3[0m
+#### CMD: rsync -aHAErlDz 'linux/arch' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:04:58[0m
+####################################################################################
+Sync
+Drop caches
+
+real	0m14.879s
+user	0m7.219s
+sys	0m2.768s
+####################################################################################
+#### [32mRSYNC: Transfer many files locally (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m2/3[0m
+#### CMD: rsync -aHAErlDz 'linux/arch' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:05:13[0m
+####################################################################################
+Sync
+Drop caches
+
+real	0m13.716s
+user	0m6.824s
+sys	0m2.671s
+####################################################################################
+#### [32mRSYNC: Transfer many files locally (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m3/3[0m
+#### CMD: rsync -aHAErlDz 'linux/arch' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:05:27[0m
+####################################################################################
+Sync
+Drop caches
+
+real	0m16.642s
+user	0m7.926s
+sys	0m2.970s
+####################################################################################
+#### [32mRSYNC: Transfer many files REMOTELY(localhost:) (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m1/3[0m
+#### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:05:45[0m
+####################################################################################
+Sync
+Drop caches
+
+real	0m24.246s
+user	0m3.102s
+sys	0m2.423s
+####################################################################################
+#### [32mRSYNC: Transfer many files REMOTELY(localhost:) (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m2/3[0m
+#### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:06:10[0m
+####################################################################################
+Sync
+Drop caches
+
+real	0m24.912s
+user	0m3.130s
+sys	0m2.404s
+####################################################################################
+#### [32mRSYNC: Transfer many files REMOTELY(localhost:) (files: 15947, dirs: 1063)[0m
+#### Pass #[1;31m3/3[0m
+#### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:06:35[0m
+####################################################################################
+Sync
+Drop caches
+
+real	0m25.245s
+user	0m3.144s
+sys	0m2.442s
+####################################################################################
+#### [32mBBCP:  Transfer 1 big file 1GB locally: -rw-rw-r-- 1 pasha pasha 1073741824 апр  7 11:52 1gb.test[0m
+#### Pass #[1;31m1/3[0m
+#### CMD: bbcp -AeOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/1gb.test' 'test.transfer' 2>&1 | egrep -v '^bbcp: Creating' --line-buffered
+#### Date: [1;34m2015-04-07_16:07:01[0m
+####################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+bbcp: 150407 16:07:04  7% done; 54.1 MB/s
+bbcp: 150407 16:07:06  15% done; 46.4 MB/s
+bbcp: 150407 16:07:08  28% done; 53.1 MB/s
+bbcp: 150407 16:07:10  36% done; 50.0 MB/s
+bbcp: 150407 16:07:12  39% done; 42.4 MB/s
+bbcp: 150407 16:07:13  47% done; 43.0 MB/s
+bbcp: 150407 16:07:15  49% done; 40.6 MB/s
+bbcp: 150407 16:07:17  54% done; 39.0 MB/s
+bbcp: 150407 16:07:19  62% done; 38.9 MB/s
+bbcp: 150407 16:07:21  71% done; 39.8 MB/s
+bbcp: 150407 16:07:23  77% done; 39.1 MB/s
+bbcp: 150407 16:07:24  86% done; 39.5 MB/s
+bbcp: 150407 16:07:25  91% done; 40.2 MB/s
+
+real	0m25.885s
+user	0m3.398s
+sys	0m1.709s
+####################################################################################
+#### [32mBBCP:  Transfer 1 big file 1GB locally: -rw-rw-r-- 1 pasha pasha 1073741824 апр  7 11:52 1gb.test[0m
+#### Pass #[1;31m2/3[0m
+#### CMD: bbcp -AeOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/1gb.test' 'test.transfer' 2>&1 | egrep -v '^bbcp: Creating' --line-buffered
+#### Date: [1;34m2015-04-07_16:07:28[0m
+####################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+bbcp: 150407 16:07:30  12% done; 66.5 MB/s
+bbcp: 150407 16:07:33  21% done; 55.6 MB/s
+bbcp: 150407 16:07:35  29% done; 50.2 MB/s
+bbcp: 150407 16:07:36  40% done; 52.6 MB/s
+bbcp: 150407 16:07:37  44% done; 51.2 MB/s
+bbcp: 150407 16:07:39  46% done; 47.9 MB/s
+bbcp: 150407 16:07:41  48% done; 41.2 MB/s
+bbcp: 150407 16:07:42  59% done; 43.9 MB/s
+bbcp: 150407 16:07:45  69% done; 44.5 MB/s
+bbcp: 150407 16:07:46  82% done; 46.8 MB/s
+bbcp: 150407 16:07:47  88% done; 47.9 MB/s
+bbcp: 150407 16:07:49  96% done; 49.5 MB/s
+
+real	0m21.939s
+user	0m3.125s
+sys	0m1.506s
+####################################################################################
+#### [32mBBCP:  Transfer 1 big file 1GB locally: -rw-rw-r-- 1 pasha pasha 1073741824 апр  7 11:52 1gb.test[0m
+#### Pass #[1;31m3/3[0m
+#### CMD: bbcp -AeOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/1gb.test' 'test.transfer' 2>&1 | egrep -v '^bbcp: Creating' --line-buffered
+#### Date: [1;34m2015-04-07_16:07:50[0m
+####################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+bbcp: 150407 16:07:53  11% done; 59.8 MB/s
+bbcp: 150407 16:07:55  20% done; 52.6 MB/s
+bbcp: 150407 16:07:57  28% done; 49.5 MB/s
+bbcp: 150407 16:07:58  33% done; 42.9 MB/s
+bbcp: 150407 16:08:00  35% done; 40.3 MB/s
+bbcp: 150407 16:08:01  44% done; 41.2 MB/s
+bbcp: 150407 16:08:04  56% done; 44.4 MB/s
+bbcp: 150407 16:08:05  68% done; 46.7 MB/s
+bbcp: 150407 16:08:08  77% done; 46.5 MB/s
+bbcp: 150407 16:08:10  90% done; 49.1 MB/s
+
+real	0m21.165s
+user	0m2.925s
+sys	0m1.544s
+####################################################################################
+#### [32mRSYNC: Transfer 1 big file 1GB locally: -rw-rw-r-- 1 pasha pasha 1073741824 апр  7 11:52 1gb.test[0m
+#### Pass #[1;31m1/3[0m
+#### CMD: rsync -aHAErlDz '1gb.test' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:08:11[0m
+####################################################################################
+Sync
+Drop caches
+
+real	1m40.064s
+user	1m11.830s
+sys	0m7.619s
+####################################################################################
+#### [32mRSYNC: Transfer 1 big file 1GB locally: -rw-rw-r-- 1 pasha pasha 1073741824 апр  7 11:52 1gb.test[0m
+#### Pass #[1;31m2/3[0m
+#### CMD: rsync -aHAErlDz '1gb.test' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:09:52[0m
+####################################################################################
+Sync
+Drop caches
+
+real	1m36.210s
+user	1m8.822s
+sys	0m7.545s
+####################################################################################
+#### [32mRSYNC: Transfer 1 big file 1GB locally: -rw-rw-r-- 1 pasha pasha 1073741824 апр  7 11:52 1gb.test[0m
+#### Pass #[1;31m3/3[0m
+#### CMD: rsync -aHAErlDz '1gb.test' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:11:28[0m
+####################################################################################
+Sync
+Drop caches
+
+real	1m45.799s
+user	1m16.492s
+sys	0m8.253s
+####################################################################################
+#### [32mRSYNC: Transfer 1 big file 1GB REMOTELY(localhost:) (files: 1, dirs: 0)[0m
+#### Pass #[1;31m1/3[0m
+#### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/1gb.test' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:13:14[0m
+####################################################################################
+Sync
+Drop caches
+
+real	3m21.714s
+user	0m26.250s
+sys	0m5.236s
+####################################################################################
+#### [32mRSYNC: Transfer 1 big file 1GB REMOTELY(localhost:) (files: 1, dirs: 0)[0m
+#### Pass #[1;31m2/3[0m
+#### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/1gb.test' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:16:36[0m
+####################################################################################
+Sync
+Drop caches
+ssh_exchange_identification: Connection closed by remote host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: error in rsync protocol data stream (code 12) at io.c(605) [Receiver=3.0.9]
+
+real	0m0.016s
+user	0m0.000s
+sys	0m0.001s
+####################################################################################
+#### [32mRSYNC: Transfer 1 big file 1GB REMOTELY(localhost:) (files: 1, dirs: 0)[0m
+#### Pass #[1;31m3/3[0m
+#### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/1gb.test' 'test.transfer'
+#### Date: [1;34m2015-04-07_16:16:36[0m
+####################################################################################
+Sync
+Drop caches
+ssh_exchange_identification: Connection closed by remote host
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: error in rsync protocol data stream (code 12) at io.c(605) [Receiver=3.0.9]
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.001s

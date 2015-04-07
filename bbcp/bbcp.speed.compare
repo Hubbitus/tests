@@ -2,16 +2,17 @@
 
 # Prepare test data:
 # 1) First many small files. F.e. Linux source tree - ~50000 files:
-# git clone --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+#git clone --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 # 2) 1 big file at 1GB size, random data:
-# dd if=/dev/urandom of=1gb.test bs=1024 count=$[ 1024 * 1024 ]
+#dd if=/dev/urandom of=1gb.test bs=1024 count=$[ 1024 * 1024 ]
 
 DEST=test.transfer
-GLOBAL_CLEAR_COMMAND="rm -rf $DEST"
+DEFAULT_CLEAR_COMMAND="rm -rf $DEST"
+DEFAULT_TEST_ITERATIONS=2
 
 rm -rf "$DEST"
 
-DEFAULT="\e[0m"
+DEFCOLOR="\e[0m"
 RED="\e[1;31m"
 GREEN="\e[32m"
 GGREEN="\e[1;32m"
@@ -22,26 +23,69 @@ BLUEBG="\e[44m"
 
 # $1 - TestName
 # $2 - CMD to test
-# $3 - Amount of runs. Optional. By default 3.
-# $4 - Optional. Command to cleanup. By default GLOBAL_CLEAR_COMMAND used
+# $3 - Amount of runs. Optional. By default $DEFAULT_TEST_ITERATIONS.
+# $4 - Optional. Command to cleanup. By default $DEFAULT_CLEAR_COMMAND used
 function testTransfer(){
-	for (( i = 1; i <= ${3:-3}; i++ )); do
-		echo -e "####################################################################################"
-		echo -e "#### ${GREEN}$1${DEFAULT}"
-		echo -e "#### Pass #${RED}$i/${3:-3}${DEFAULT}"
-		echo -e "#### CMD: $2"
-		echo -e "#### Date: ${BLUE}$(date +'%F_%T')${DEFAULT}"
-		echo -e "####################################################################################"
+	for (( i = 1; i <= ${3:-$DEFAULT_TEST_ITERATIONS}; i++ )); do
+		echo -e "##############################################################################################"
+		echo -e "### ${GREEN}$1${DEFCOLOR}"
+		echo -e "### Pass #${RED}$i/${3:-$DEFAULT_TEST_ITERATIONS}${DEFCOLOR}"
+		echo -e "### CMD: $2"
+		echo -e "### Date: ${BLUE}$(date +'%F_%T')${DEFCOLOR}"
+		echo -e "##############################################################################################"
 
 		echo 'Sync'
 		sync
 		echo 'Drop caches'
 		sudo sh -c 'echo 3 > /proc/sys/vm/drop_caches'
 
-		time eval "$2"
+		time eval "$2 2>&1 | egrep -v '^bbcp: Creating' --line-buffered"
 
-		[ ! -z "${4:-$GLOBAL_CLEAR_COMMAND}" ] && eval "${4:-$GLOBAL_CLEAR_COMMAND}"
+		[ ! -z "${4:-$DEFAULT_CLEAR_COMMAND}" ] && eval "${4:-$DEFAULT_CLEAR_COMMAND}"
 	done
+}
+
+# $1 - base name to add differenced options
+# $2 - base bbcp options to add with
+function testBBCPvariats(){
+	BASE_NAME="$1"
+	BASE_PARAM="$2"
+
+	testTransfer "$BASE_NAME" \
+		"bbcp $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}with MD5${DEFCOLOR}" \
+		"bbcp -e $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP window 64K${DEFCOLOR}" \
+		"bbcp -w 64K $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP window 128K${DEFCOLOR}" \
+		"bbcp -w 128K $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP window 512K${DEFCOLOR}" \
+		"bbcp -w 512K $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP window 2M${DEFCOLOR}" \
+		"bbcp -w 2M $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP window 16M${DEFCOLOR}" \
+		"bbcp -w 16M $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP streams: 1${DEFCOLOR}" \
+		"bbcp -s 1 $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP streams: 2${DEFCOLOR}" \
+		"bbcp -s 2 $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP streams: 4${DEFCOLOR}" \
+		"bbcp -s 4 $BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP streams: 8${DEFCOLOR}" \
+		"bbcp -s 8$BASE_PARAM"
+
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP streams: 16${DEFCOLOR}" \
+		"bbcp -s 16 $BASE_PARAM"
 }
 
 #################### Tests itself ######################
@@ -51,9 +95,9 @@ function testTransfer(){
 FROM=linux/arch
 DEST=test.transfer
 
-# -va
-testTransfer "BBCP:  Transfer many files locally (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l))" \
-	"bbcp -AeOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST' 2>&1 | egrep -v 'bbcp: Creating' --line-buffered"
+testBBCPvariats \
+	"BBCP: Many files (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l))" \
+	"-FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 
 # -v --progress --itemize-changes --stats --human-readable --partial --inplace
 testTransfer "RSYNC: Transfer many files locally (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l))" \
@@ -66,17 +110,15 @@ testTransfer "RSYNC: Transfer many files REMOTELY(localhost:) (files: $(find $FR
 #########################
 
 FROM=1gb.test
-#FROM=localhost:/home/pasha/temp/Speed.test/bbcp/1gb.test
 
-# -va
-testTransfer "BBCP:  Transfer 1 big file 1GB locally: $(ls -l $FROM)" \
-	"bbcp -AeOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST' 2>&1 | egrep -v '^bbcp: Creating' --line-buffered"
+testBBCPvariats \
+	"BBCP: 1 big file 1GB: $(ls -l $FROM)" \
+	"-FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 
 # -v --progress --itemize-changes --stats --human-readable --partial --inplace
 testTransfer "RSYNC: Transfer 1 big file 1GB locally: $(ls -l $FROM)" \
 	"rsync -aHAErlDz '$FROM' '$DEST'"
 
-# -v --progress --itemize-changes --stats --human-readable --partial --inplace
 testTransfer "RSYNC: Transfer 1 big file 1GB REMOTELY(localhost:) (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l))" \
 	"rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 

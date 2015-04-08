@@ -5,6 +5,7 @@
 #git clone --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 # 2) 1 big file at 1GB size, random data:
 #dd if=/dev/urandom of=1gb.test bs=1024 count=$[ 1024 * 1024 ]
+#dd if=/dev/urandom of=100mb.test bs=1024 count=$[ 1024 * 100 ]
 
 DEST=test.transfer
 DEFAULT_CLEAR_COMMAND="rm -rf $DEST"
@@ -69,8 +70,8 @@ function testBBCPvariats(){
 	testTransfer "$BASE_NAME; ${BLUEBG}TCP window 2M${DEFCOLOR}" \
 		"bbcp -w 2M $BASE_PARAM"
 
-	testTransfer "$BASE_NAME; ${BLUEBG}TCP window 16M${DEFCOLOR}" \
-		"bbcp -w 16M $BASE_PARAM"
+	testTransfer "$BASE_NAME; ${BLUEBG}TCP window 4M${DEFCOLOR}" \
+		"bbcp -w 4M $BASE_PARAM"
 
 	testTransfer "$BASE_NAME; ${BLUEBG}TCP streams: 1${DEFCOLOR}" \
 		"bbcp -s 1 $BASE_PARAM"
@@ -82,7 +83,7 @@ function testBBCPvariats(){
 		"bbcp -s 4 $BASE_PARAM"
 
 	testTransfer "$BASE_NAME; ${BLUEBG}TCP streams: 8${DEFCOLOR}" \
-		"bbcp -s 8$BASE_PARAM"
+		"bbcp -s 8 $BASE_PARAM"
 
 	testTransfer "$BASE_NAME; ${BLUEBG}TCP streams: 16${DEFCOLOR}" \
 		"bbcp -s 16 $BASE_PARAM"
@@ -92,34 +93,35 @@ function testBBCPvariats(){
 
 {
 #FROM=linux/block
-FROM=linux/arch
+#FROM=linux/arch
+FROM=linux/arch/arm
 DEST=test.transfer
 
 testBBCPvariats \
-	"BBCP: Many files (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l))" \
+	"BBCP: Many files (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l), bytes: $(du -hs $FROM | cut -f1))" \
 	"-FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 
 # -v --progress --itemize-changes --stats --human-readable --partial --inplace
-testTransfer "RSYNC: Transfer many files locally (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l))" \
+testTransfer "RSYNC: Transfer many files locally (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l), bytes: $(du -hs $FROM | cut -f1))" \
 	"rsync -aHAErlDz '$FROM' '$DEST'"
 
 # -v --progress --itemize-changes --stats --human-readable --partial --inplace
-testTransfer "RSYNC: Transfer many files REMOTELY(localhost:) (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l))" \
+testTransfer "RSYNC: Transfer many files REMOTELY(localhost:) (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l), bytes: $(du -hs $FROM | cut -f1))" \
 	"rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 
 #########################
 
-FROM=1gb.test
+FROM=100mb.test
 
 testBBCPvariats \
-	"BBCP: 1 big file 1GB: $(ls -l $FROM)" \
+	"BBCP: 1 big file 100MB: $(ls -l $FROM)" \
 	"-FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 
 # -v --progress --itemize-changes --stats --human-readable --partial --inplace
-testTransfer "RSYNC: Transfer 1 big file 1GB locally: $(ls -l $FROM)" \
+testTransfer "RSYNC: Transfer 1 big file 100MB locally: $(ls -l $FROM)" \
 	"rsync -aHAErlDz '$FROM' '$DEST'"
 
-testTransfer "RSYNC: Transfer 1 big file 1GB REMOTELY(localhost:) (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l))" \
+testTransfer "RSYNC: Transfer 1 big file 100MB REMOTELY(localhost:) $(ls -l $FROM)" \
 	"rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 
 } 2>&1 | tee test.$(date +'%F_%T').log

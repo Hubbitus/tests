@@ -1,0 +1,769 @@
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M)[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:19:18[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m42.410s
+user	0m11.192s
+sys	0m29.206s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M)[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:20:01[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m50.587s
+user	0m12.289s
+sys	0m33.788s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mwith MD5[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -e -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:20:52[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m56.080s
+user	0m12.256s
+sys	0m43.413s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mwith MD5[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -e -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:21:49[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m50.173s
+user	0m12.224s
+sys	0m33.435s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 64K[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 64K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:22:40[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m50.517s
+user	0m12.516s
+sys	0m33.234s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 64K[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 64K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:23:31[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m43.802s
+user	0m11.418s
+sys	0m29.128s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 128K[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 128K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:24:16[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m42.634s
+user	0m11.186s
+sys	0m29.224s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 128K[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 128K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:25:00[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m43.183s
+user	0m11.131s
+sys	0m29.496s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 512K[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 512K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:25:44[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m55.456s
+user	0m12.042s
+sys	0m42.912s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 512K[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 512K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:26:40[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m43.110s
+user	0m11.497s
+sys	0m28.785s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 2M[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 2M -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:27:24[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m50.742s
+user	0m12.405s
+sys	0m33.444s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 2M[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 2M -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:28:15[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m42.458s
+user	0m11.306s
+sys	0m29.100s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 4M[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 4M -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:28:59[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m56.556s
+user	0m12.189s
+sys	0m42.524s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP window 4M[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 4M -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:29:56[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m50.974s
+user	0m12.357s
+sys	0m33.513s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 1[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 1 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:30:48[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m40.991s
+user	0m10.767s
+sys	0m26.202s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 1[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 1 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:31:30[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m39.824s
+user	0m10.241s
+sys	0m25.318s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 2[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 2 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:32:10[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m41.865s
+user	0m10.568s
+sys	0m27.457s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 2[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 2 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:32:53[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m42.226s
+user	0m10.671s
+sys	0m27.400s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 4[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 4 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:33:36[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m55.390s
+user	0m12.288s
+sys	0m43.177s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 4[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 4 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:34:32[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	0m50.194s
+user	0m12.275s
+sys	0m33.612s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 8[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 8 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:35:23[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	1m3.144s
+user	0m11.803s
+sys	0m56.693s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 8[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 8 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:36:27[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	1m4.778s
+user	0m12.159s
+sys	0m56.975s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 16[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 16 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:37:33[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	1m9.391s
+user	0m12.471s
+sys	1m3.281s
+##############################################################################################
+### [32mBBCP: Many files (files: 3842, dirs: 180, bytes: 31M); [44mTCP streams: 16[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 16 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:38:43[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 3842 files and 0 links in 180 directories.
+
+real	1m9.816s
+user	0m12.362s
+sys	1m3.066s
+##############################################################################################
+### [32mRSYNC: Transfer many files locally (files: 3842, dirs: 180, bytes: 31M)[0m
+### Pass #[1;31m1/2[0m
+### CMD: rsync -aHAErlDz 'linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:39:54[0m
+##############################################################################################
+Sync
+Drop caches
+
+real	0m4.290s
+user	0m3.417s
+sys	0m2.736s
+##############################################################################################
+### [32mRSYNC: Transfer many files locally (files: 3842, dirs: 180, bytes: 31M)[0m
+### Pass #[1;31m2/2[0m
+### CMD: rsync -aHAErlDz 'linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:39:59[0m
+##############################################################################################
+Sync
+Drop caches
+
+real	0m6.029s
+user	0m3.402s
+sys	0m2.849s
+##############################################################################################
+### [32mRSYNC: Transfer many files REMOTELY(localhost:) (files: 3842, dirs: 180, bytes: 31M)[0m
+### Pass #[1;31m1/2[0m
+### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:06[0m
+##############################################################################################
+Sync
+Drop caches
+
+real	0m5.856s
+user	0m1.169s
+sys	0m2.073s
+##############################################################################################
+### [32mRSYNC: Transfer many files REMOTELY(localhost:) (files: 3842, dirs: 180, bytes: 31M)[0m
+### Pass #[1;31m2/2[0m
+### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/linux/arch/arm' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:13[0m
+##############################################################################################
+Sync
+Drop caches
+
+real	0m5.815s
+user	0m1.126s
+sys	0m2.125s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:20[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.672s
+user	0m0.089s
+sys	0m0.879s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:24[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.637s
+user	0m0.101s
+sys	0m0.857s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mwith MD5[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -e -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:29[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.675s
+user	0m0.596s
+sys	0m0.885s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mwith MD5[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -e -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:33[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.674s
+user	0m0.617s
+sys	0m0.851s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 64K[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 64K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:37[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.554s
+user	0m0.105s
+sys	0m0.933s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 64K[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 64K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:41[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.638s
+user	0m0.116s
+sys	0m0.924s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 128K[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 128K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:46[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.621s
+user	0m0.099s
+sys	0m0.872s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 128K[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 128K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:50[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.629s
+user	0m0.095s
+sys	0m0.888s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 512K[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 512K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:54[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.589s
+user	0m0.083s
+sys	0m0.751s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 512K[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 512K -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:40:58[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+bbcp: 150408 13:41:01  79% done; 74.5 MB/s
+
+real	0m4.005s
+user	0m0.095s
+sys	0m0.741s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 2M[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 2M -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:03[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.673s
+user	0m0.084s
+sys	0m0.751s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 2M[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 2M -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:07[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.623s
+user	0m0.097s
+sys	0m0.744s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 4M[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -w 4M -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:11[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.597s
+user	0m0.083s
+sys	0m0.749s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP window 4M[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -w 4M -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:16[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.555s
+user	0m0.091s
+sys	0m0.753s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 1[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 1 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:20[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.620s
+user	0m0.097s
+sys	0m0.865s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 1[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 1 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:24[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.612s
+user	0m0.088s
+sys	0m0.856s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 2[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 2 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:28[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.570s
+user	0m0.099s
+sys	0m0.856s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 2[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 2 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:33[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.638s
+user	0m0.109s
+sys	0m0.865s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 4[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 4 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:37[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.546s
+user	0m0.104s
+sys	0m0.872s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 4[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 4 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:41[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.588s
+user	0m0.097s
+sys	0m0.862s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 8[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 8 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:45[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.609s
+user	0m0.100s
+sys	0m0.919s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 8[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 8 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:50[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.632s
+user	0m0.104s
+sys	0m0.911s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 16[0m[0m
+### Pass #[1;31m1/2[0m
+### CMD: bbcp -s 16 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:54[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.647s
+user	0m0.090s
+sys	0m0.929s
+##############################################################################################
+### [32mBBCP: 1 big file 100MB: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test; [44mTCP streams: 16[0m[0m
+### Pass #[1;31m2/2[0m
+### CMD: bbcp -s 16 -FnAOprkz -P 2 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:41:58[0m
+##############################################################################################
+Sync
+Drop caches
+bbcp: Indexing files to be copied...
+bbcp: Copying 0 files and 0 links in 0 directories.
+
+real	0m3.725s
+user	0m0.091s
+sys	0m0.950s
+##############################################################################################
+### [32mRSYNC: Transfer 1 big file 100MB locally: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test[0m
+### Pass #[1;31m1/2[0m
+### CMD: rsync -aHAErlDz '100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:42:03[0m
+##############################################################################################
+Sync
+Drop caches
+
+real	0m15.593s
+user	0m15.495s
+sys	0m2.134s
+##############################################################################################
+### [32mRSYNC: Transfer 1 big file 100MB locally: -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test[0m
+### Pass #[1;31m2/2[0m
+### CMD: rsync -aHAErlDz '100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:42:19[0m
+##############################################################################################
+Sync
+Drop caches
+
+real	0m15.805s
+user	0m15.842s
+sys	0m2.032s
+##############################################################################################
+### [32mRSYNC: Transfer 1 big file 100MB REMOTELY(localhost:) -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test[0m
+### Pass #[1;31m1/2[0m
+### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:42:35[0m
+##############################################################################################
+Sync
+Drop caches
+
+real	0m24.416s
+user	0m3.184s
+sys	0m2.130s
+##############################################################################################
+### [32mRSYNC: Transfer 1 big file 100MB REMOTELY(localhost:) -rw-rw-r--. 1 pasha pasha 104857600 апр  8 00:43 100mb.test[0m
+### Pass #[1;31m2/2[0m
+### CMD: rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/100mb.test' 'test.transfer'
+### Date: [1;34m2015-04-08_13:43:00[0m
+##############################################################################################
+Sync
+Drop caches
+
+real	0m24.712s
+user	0m3.280s
+sys	0m2.119s

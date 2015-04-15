@@ -103,11 +103,11 @@ testBBCPvariats \
 
 # -v --progress --itemize-changes --stats --human-readable --partial --inplace
 testTransfer "RSYNC: Transfer many files locally (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l), bytes: $(du -hs $FROM | cut -f1))" \
-	"rsync -aHAErlDz '$FROM' '$DEST'"
+	"rsync -aHAErlD '$FROM' '$DEST'"
 
 # -v --progress --itemize-changes --stats --human-readable --partial --inplace
 testTransfer "RSYNC: Transfer many files REMOTELY(localhost:) (files: $(find $FROM -type f | wc -l), dirs: $(find $FROM -type d | wc -l), bytes: $(du -hs $FROM | cut -f1))" \
-	"rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
+	"rsync -aHAErlD 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 
 #########################
 
@@ -119,10 +119,10 @@ testBBCPvariats \
 
 # -v --progress --itemize-changes --stats --human-readable --partial --inplace
 testTransfer "RSYNC: Transfer 1 big file 100MB locally: $(ls -l $FROM)" \
-	"rsync -aHAErlDz '$FROM' '$DEST'"
+	"rsync -aHAErlD '$FROM' '$DEST'"
 
 testTransfer "RSYNC: Transfer 1 big file 100MB REMOTELY(localhost:) $(ls -l $FROM)" \
-	"rsync -aHAErlDz 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
+	"rsync -aHAErlD 'localhost:/home/pasha/temp/Speed.test/bbcp/$FROM' '$DEST'"
 
-} 2>&1 | tee test.$(date +'%F_%T').log
+} 2>&1 | tee test-rsync-without-z.$(date +'%F_%T').log
 
